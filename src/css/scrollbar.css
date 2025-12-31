@@ -1,0 +1,18 @@
+.project-detail-modal-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-detail-modal-scrollbar::-webkit-scrollbar-track {
+    background: #707070;
+    border-radius: 4px;
+    
+}
+
+.project-detail-modal-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff5fd7, #5827df);
+    border-radius: 4px;
+}
+
+.project-detail-modal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #e5533d;
+}
