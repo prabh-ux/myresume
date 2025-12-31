@@ -1,5 +1,5 @@
 import React from 'react'
-import mypic from './mypic.jpg';
+import mypic from './myPic.jpg';
 const DetailSection = () => {
 
 
