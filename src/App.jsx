@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import DetailSection from './DetailSection';
-import realStateImg from './assets/realstate.png';
+import realStateImg from './assets/realState.png';
 import mediSyncImg from './assets/medisync.png';
 import ProjectDetailModal from './ProjectDetailModal';
 export default function App() {
