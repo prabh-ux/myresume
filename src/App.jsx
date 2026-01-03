@@ -2,58 +2,93 @@ import { useState } from 'react';
 import DetailSection from './DetailSection';
 import realStateImg from './assets/realState.png';
 import mediSyncImg from './assets/medisync.png';
+import DreamScapesImg from './assets/DreamScapes.png';
+import ECommerceImg from './assets/ECommerce.png';
 import ProjectDetailModal from './ProjectDetailModal';
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const projects = [
     {
-      title: "Elysian Estates",
-      // Use professional sub-titles for tech
-      tech: "React 18 • Tailwind CSS • Framer Motion • Figma",
-      color: "from-emerald-500 to-teal-500",
-      // Focus on Business Value in the description
-      description: "A high-end real estate engine featuring a custom filtering architecture. Built to handle large property datasets with zero-latency search, interactive inquiry workflows, and a mobile-first premium aesthetic.",
+      title: "DreamScapes Web-Based Photo Editor",
+      tech: "MERN · Vite · Tailwind CSS · Redux · Canvas API · JWT · bcrypt · Joi",
+      color: "from-emerald-500 to-blue-500",
+      description: "A browser-first, Canva-like photo editing platform that enables users and businesses to create, edit, and manage visual assets quickly without desktop software—reducing time-to-content and enabling cloud-backed project workflows, secure accounts, and exportable assets for marketing and product use.",
       features: [
-        "Smart Multi-Criteria Filtering",
-        "Dynamic Price-Sorting Algorithms",
-        "Lead-Capture Inquiry System",
-        "High-Performance Image Optimization"
+        "Secure JWT-based authentication and user accounts",
+        "Layer-based editor (move, resize, rotate, delete)",
+        "Rich text with styling",
+        "Brush/draw tools with adjustable size and color",
+        "Crop, resize, and filter adjustments via Canvas API",
+        "Undo/Redo history for safe iterative editing",
+        "Save/load projects (CRUD) persisted in MongoDB",
+        "High-performance, responsive UI optimized for desktop & mobile",
+        "Export/download images and manage gallery items",
+        "Search/import images and built-in asset library"
       ],
-      img: realStateImg,
-      liveLink: "https://elysian-real-states.vercel.app/",
-      github: "https://github.com/prabh-ux/ELYSIAN-RealStates"
+      img: DreamScapesImg,
+      liveLink: "https://dream-scapes-frontend.vercel.app/",
+      github: "https://github.com/prabh-ux/DreamScapesFrontend",
+     
+     
     },
-   {
-  title: "Medi Sync",
-  tech: "React • Tailwind • Figma",
-  color: "from-cyan-500 to-blue-500",
-  // High-conversion description
-  description: "An enterprise-grade healthcare management portal engineered for seamless patient-doctor connectivity. Features a proprietary appointment scheduling engine, secure medical record previews, and real-time department availability tracking.",
+{
+  title: "Villager E‑commerce Store",
+  tech: "MERN · Vite · TailwindCSS · JWT · bcrypt · Joi",
+  color: "from-emerald-500 to-teal-500",
+  description: "Full‑stack e‑commerce platform that increases conversion and reduces churn by providing secure authentication, persistent cart syncing, fast relevance-scored search, and a streamlined checkout flow — ready for production payment integration and email verification.",
   features: [
-    "Intuitive Patient Intake Flow",
-    "Real-time Availability Engine",
-    "Responsive Medical Dashboard",
-    "Accessibility (A11y) Compliant"
+    "Secure JWT-based authentication with httpOnly cookie sessions (signup/login)",
+    "Email OTP verification & transactional emails via Nodemailer",
+    "Persistent server-side cart with optimistic UI updates and patch sync",
+    "Advanced product search with keyword scoring, paging and fallbacks",
+    "Product detail pages, reviews/ratings, and add-to-cart UX",
+    "Address management and recent orders history",
+    "Checkout flow that creates orders and clears cart (easy payment gateway integration)",
+    "REST API (Express + Mongoose) with CORS configuration; backend deployed on Render"
   ],
-  img: mediSyncImg,
-  liveLink: "https://medisync-drab.vercel.app/",
-  github: "https://github.com/prabh-ux/medisync"
+  img: ECommerceImg,
+  liveLink:"https://villagerclothing.vercel.app/" ,
+  github: "https://github.com/prabh-ux/ECommerceWebsiteFrontend"
 }
-    //  { 
-    //     title: "Elysian Estates", 
-    //     tech: "React • Tailwind", 
-    //     color: "from-emerald-500 to-teal-500",
-    //     description: "Luxury property collection with dynamic filtering, price sorting, and inquiry systems.",
-    //     img:realStateImg
-    //   },
-    //     { 
-    //       title: "Task Flow", 
-    //       tech: "Dnd-Kit • React", 
-    //       color: "from-pink-500 to-rose-500",
-    //       description: "Kanban-style productivity tool with drag-and-drop mechanics.",
-    //        img:realStateImg
-    //     },
+
+
+
+
+    // {
+    //   title: "Elysian Estates",
+    //   // Use professional sub-titles for tech
+    //   tech: "React 18 • Tailwind CSS • Framer Motion • Figma",
+    //   color: "from-emerald-500 to-teal-500",
+    //   // Focus on Business Value in the description
+    //   description: "A high-end real estate engine featuring a custom filtering architecture. Built to handle large property datasets with zero-latency search, interactive inquiry workflows, and a mobile-first premium aesthetic.",
+    //   features: [
+    //     "Smart Multi-Criteria Filtering",
+    //     "Dynamic Price-Sorting Algorithms",
+    //     "Lead-Capture Inquiry System",
+    //     "High-Performance Image Optimization"
+    //   ],
+    //   img: realStateImg,
+    //   liveLink: "https://elysian-real-states.vercel.app/",
+    //   github: "https://github.com/prabh-ux/ELYSIAN-RealStates"
+    // },
+    // {
+    //   title: "Medi Sync",
+    //   tech: "React • Tailwind • Figma",
+    //   color: "from-cyan-500 to-blue-500",
+    //   // High-conversion description
+    //   description: "An enterprise-grade healthcare management portal engineered for seamless patient-doctor connectivity. Features a proprietary appointment scheduling engine, secure medical record previews, and real-time department availability tracking.",
+    //   features: [
+    //     "Intuitive Patient Intake Flow",
+    //     "Real-time Availability Engine",
+    //     "Responsive Medical Dashboard",
+    //     "Accessibility (A11y) Compliant"
+    //   ],
+    //   img: mediSyncImg,
+    //   liveLink: "https://medisync-drab.vercel.app/",
+    //   github: "https://github.com/prabh-ux/medisync"
+    // }
+    //  
   ];
   const [selectedProject, setSelectedProject] = useState(null);
   return (
@@ -85,19 +120,27 @@ export default function App() {
       </nav>
 
       {/* --- Hero Section --- */}
-      <header className="max-w-6xl mx-auto pt-48  px-6 relative">
+      <header className="max-w-6xl mx-auto pt-48 px-6 relative">
         <div className="flex flex-col items-start">
+          {/* The Badge: Sounds more professional than just "Developer" */}
           <div className="bg-purple-500/10 border border-purple-500/20 text-purple-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-8">
-            Frontend Engineer
+            MERN Software Developer
           </div>
 
-          <h2 className="text-5xl md:text-8xl font-black text-white tracking-tight mb-2  leading-[0.9] flex flex-col md:flex-row">
+          {/* The Heading: Highlighting your Name + Expertise */}
+          <h2 className="text-5xl md:text-8xl font-black text-white tracking-tight mb-2 leading-[0.9] flex flex-col md:flex-row">
             Prahkirat&nbsp;
-            <span className="text-transparent bg-clip-text bg-gradient-to-r pb-8 from-purple-400 via-pink-400 to-blue-400">
-              Singh
+            <span className="text-transparent bg-clip-text bg-gradient-to-r pb-4 from-purple-400 via-pink-400 to-blue-400">
+              Singh.
             </span>
           </h2>
 
+          {/* Added a sub-headline: This is what interviewers look for in a MERN dev */}
+          <p className="max-w-2xl text-gray-400 text-lg md:text-xl mt-6 font-medium leading-relaxed">
+            Building <span className="text-white">scalable</span> web applications with the
+            <span className="text-purple-400"> MERN</span> stack. Focused on creating
+            high-performance backends and seamless user experiences.
+          </p>
         </div>
       </header>
 
@@ -180,8 +223,8 @@ export default function App() {
 
       {/* --- Footer --- */}
       <footer id='talk' className="py-24 text-center border-t border-white/5">
-        <h2 className="text-3xl font-bold text-white mb-4">Want to work together?</h2>
-        <p className="text-slate-500 mb-10">Currently accepting new freelance projects.</p>
+        <h2 className="text-3xl font-bold text-white mb-4">Contact</h2>
+        
         <a href="mailto:prabhkiratsinghbusiness@gmail.com" className="text-xl font-bold text-purple-400 hover:text-purple-300 transition-all border-b-2 border-purple-500/20 pb-2">
           prabhkiratsinghbusiness@gmail.com
         </a>
