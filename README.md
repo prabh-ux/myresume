@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Prabhkirat Singh
-### Frontend Developer | UI/UX Engineer
+### Mern Developer | UI/UX Engineer
 
 I build high-performance, aesthetic web applications that bridge the gap between complex logic and premium design.
 
@@ -11,4 +11,4 @@ I build high-performance, aesthetic web applications that bridge the gap between
 
 Email: [prabhkiratsinghbusiness@gmail.com]
 
-*"Available for freelance opportunities in high-end Frontend Development."*
+
