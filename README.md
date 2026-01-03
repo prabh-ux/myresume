@@ -5,8 +5,6 @@ I build high-performance, aesthetic web applications that bridge the gap between
 
 ---
 
-### 🚀 Featured Projects
-
 ### 📫 Connect with me
 
 Email: [prabhkiratsinghbusiness@gmail.com]
